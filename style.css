@@ -1,0 +1,257 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #221D1D;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(casino_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 75vw;
+    margin-left: 2vw;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10vh;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2vw;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#games {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+#game1 {
+    order:1;
+    flex-grow:1;
+    background-image: url(pong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#game2 {
+    order: 2;
+    flex-grow:1;
+    background-image: url(blackjack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#game3 {
+    order:3;
+    flex-grow: 1;
+    background-image: url(dice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game1,#game2,#game3{
+    height: 30vh;
+    margin: 3vh;
+    margin-bottom: 0;
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+    cursor: pointer;
+    
+}
+
+#games_bottom {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+#game1_bottom {
+    order: 1;
+    flex-grow: 1;
+    font-size: 6vh;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#game2_bottom {
+    order: 2;
+    flex-grow: 1;
+    font-size: 6vh;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#game3_bottom {
+    order: 3;
+    flex-grow: 1;
+    font-size: 6vh;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#game1_bottom,#game2_bottom,#game3_bottom {
+    height: 10vh;
+    background-color: #9C9797;
+    margin: 3vh;
+    margin-top: 0;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    text-align: center;  
+    flex-basis: 0px;
+    cursor: pointer; 
+}
+
+#game_title {
+    color: #9C9797;
+    font-size: 10vh;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+    text-underline-offset: 1.5vh;
+    
+}
+
+#game_box2 {
+    display: none;
+}
+
+#games2 {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+
+#game12 {
+    background-image: url(pong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#game22 {
+    background-image: url(blackjack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#game32 {
+    background-image: url(dice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game12,#game22,#game32{
+    height: 30vh;
+    margin: 3vh;
+    margin-bottom: 0;
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+    cursor: pointer;
+    
+}
+
+#games_bottom2 {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+
+#game1_bottom2 {
+    font-size: 6vh;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#game2_bottom2 {
+    font-size: 6vh;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#game3_bottom2 {
+    font-size: 6vh;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#game1_bottom2,#game2_bottom2,#game3_bottom2 {
+    height: 10vh;
+    background-color: #9C9797;
+    margin: 3vh;
+    margin-top: 0;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    text-align: center;  
+    flex-basis: 0px;
+    cursor: pointer; 
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        width: 90vw;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: block;
+        margin: 0;
+        cursor: pointer;
+    
+    }
+
+    #game_box2 {
+        display: inline;
+    }
+
+    #game_box {
+        display: none;
+    }
+
+
+}
+

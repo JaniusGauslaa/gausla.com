@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CASINO.</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_pong.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="onload()">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html"><h1 class="logo">CASINO.</h1></a>
+            </div>
+        </div>
+        <h1 id="game_title">PONG</h1>
+        <div id="gameContainer">
+            <button id="upBtn"></button>
+            <canvas id="gameBoard" width="700" height="400"></canvas>
+            <button id="downBtn"></button>
+            <div id="scoreText">0 : 0</div>
+            <button id="resetBtn">Reset</button>
+            <button id="FullScreenBtn">⛶</button>
+        </div>
+        <div id="popup">
+            <div id="popup_info">
+                Choose difficulty:
+            </div>
+            <div id="popup_buttons">
+                <button id="gameModeEasy">Easy</button>
+                <button id="gameModeMedium">Medium</button>
+                <button id="gameModeHard">Hard</button>
+                <button id="gameModeImpossible">Impossible</button>
+            </div>
+        </div>
+        <script src="Pong_canvas_script.js"></script>
+    </body>
+</html>
